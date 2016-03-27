@@ -37,7 +37,7 @@ class base3(base1):
         super(base3, self).__del__()
 
 
-class diamond(base3, base2):
+class diamond(base2, base3):
     def __init__(self):
         print "diamond.__init__"
         super(diamond, self).__init__()
