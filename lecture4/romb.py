@@ -46,6 +46,12 @@ class diamond(base2, base3):
         print "diamond.fun"
         super(diamond, self).fun()
 
+    def __repr__(self):
+        return "Repr called"
+
+    def __str__(self):
+        return "Str called"
+
     def __del__(self):
         print "diamond.__del__"
         super(diamond, self).__del__()
